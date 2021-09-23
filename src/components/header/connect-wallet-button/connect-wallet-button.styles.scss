@@ -1,0 +1,28 @@
+@import '../../../styles/theme-colors.scss';
+
+.connect-wallet-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  background-color: $header-grey;
+  border-radius: 12px;
+  color: white;
+  border: 1px solid transparent;
+  padding: 6px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: rgb(130, 130, 255);
+  }
+
+  .button-text {
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .logo {
+    flex: 1;
+    height: 2.5em;
+  }
+}
