@@ -1,0 +1,10 @@
+@import '../../styles/theme-colors.scss';
+
+.homepage {
+  height: 100vh;
+  background-color: $body-color;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

@@ -1,6 +1,6 @@
 # OuRPS - Our Rock Paper Scissors
 
-Interface for the collective rock paper scissors game based on a smart contract.
+Interface for the Web3 collective rock paper scissors game based on a smart contract.
 
 Blockchain backend can be seen in [here](https://github.com/yagizsenal/ourps)
 
