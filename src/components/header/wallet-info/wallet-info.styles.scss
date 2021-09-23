@@ -1,0 +1,32 @@
+@import '../../../styles/theme-colors.scss';
+
+.wallet-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: $header-grey;
+  border-radius: 12px;
+  color: white;
+  white-space: nowrap;
+
+  .user-balance {
+    display: inline-block;
+    padding: 8px;
+  }
+
+  .user-account {
+    overflow: hidden;
+    display: flex;
+    flex: 1;
+    background-color: $header-dark;
+    border: 1px solid transparent;
+    padding: 0.5rem;
+    border-radius: 12px;
+    column-gap: 10px;
+    cursor: pointer;
+
+    &:hover {
+      border-color: rgb(130, 130, 255);
+    }
+  }
+}
