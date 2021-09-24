@@ -18,4 +18,12 @@
     display: flex;
     justify-content: center;
   }
+
+  .ballots {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+  }
 }

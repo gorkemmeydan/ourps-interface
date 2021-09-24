@@ -1,0 +1,51 @@
+@import '../../../styles/theme-colors.scss';
+
+.option {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  border-radius: 12px;
+  overflow: hidden;
+
+  &.red {
+    background-color: $dark-red;
+  }
+
+  &.blue {
+    background-color: $dark-blue;
+  }
+
+  .image-container {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 5px;
+    border: 2px solid transparent;
+
+    &:hover {
+      border-color: white;
+    }
+
+    .rps-image {
+      width: 100%;
+    }
+  }
+
+  .option-percentage {
+    padding-top: 2px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2vmin;
+  }
+
+  .vote-count {
+    padding-top: 2px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2vmin;
+  }
+}

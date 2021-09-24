@@ -1,0 +1,33 @@
+@import '../../styles/theme-colors.scss';
+
+.ballot {
+  max-width: 600px;
+  max-height: 600px;
+  border-radius: 12px;
+  flex: 1;
+
+  &.red {
+    background-color: $light-red;
+  }
+
+  &.blue {
+    background-color: $light-blue;
+  }
+
+  .team-name {
+    padding-top: 3%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+
+  .rps-container {
+    flex: 1;
+    overflow: hidden;
+    padding: 5%;
+    column-gap: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
