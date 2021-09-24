@@ -1,0 +1,16 @@
+@import '../../styles/theme-colors.scss';
+
+.round-history {
+  flex: 1;
+  background-color: $header-dark;
+  max-width: 1200px;
+  height: 80px;
+  border-radius: 12px;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

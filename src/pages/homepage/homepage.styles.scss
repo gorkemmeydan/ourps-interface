@@ -26,4 +26,19 @@
     justify-content: center;
     column-gap: 10%;
   }
+
+  .round-history-text {
+    padding-top: 3%;
+    padding-bottom: 1%;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .round-history-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
 }

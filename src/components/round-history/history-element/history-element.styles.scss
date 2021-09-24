@@ -1,0 +1,26 @@
+@import '../../../styles/theme-colors.scss';
+
+.history-element {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+  border-radius: 12px;
+
+  &.red {
+    background-color: $dark-red;
+  }
+
+  &.blue {
+    background-color: $dark-blue;
+  }
+
+  &.draw {
+    background-color: $draw-yellow;
+  }
+
+  .history-image {
+    flex: 1;
+    height: 100%;
+  }
+}
