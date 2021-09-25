@@ -1,0 +1,3 @@
+const OURPS_ADRESS = '0x0fcded31249F3CA5101b1180b2c009BC2aC67589';
+
+export default OURPS_ADRESS;
