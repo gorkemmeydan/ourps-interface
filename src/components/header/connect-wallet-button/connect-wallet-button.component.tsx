@@ -4,7 +4,7 @@ import { useEthers } from '@usedapp/core';
 
 import { ReactComponent as MetaMaskLogo } from '../../../assets/metamask-fox.svg';
 
-import './connect-wallet-button.styles.scss';
+import styles from './connect-wallet-button.module.scss';
 
 const ConnectWalletButton: React.FC = () => {
   const { activateBrowserWallet } = useEthers();
@@ -16,11 +16,11 @@ const ConnectWalletButton: React.FC = () => {
   return (
     <button
       type='button'
-      className='connect-wallet-button'
+      className={styles.connectWalletButton}
       onClick={handleConnectWallet}
     >
-      <div className='button-text'>Connect with MetaMask</div>
-      <MetaMaskLogo className='logo' />
+      <div className={styles.buttonText}>Connect with MetaMask</div>
+      <MetaMaskLogo className={styles.logo} />
     </button>
   );
 };

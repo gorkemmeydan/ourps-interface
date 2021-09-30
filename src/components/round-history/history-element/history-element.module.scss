@@ -1,6 +1,6 @@
 @import '../../../styles/theme-colors.scss';
 
-.history-element {
+.historyElement {
   display: flex;
   height: 50px;
   width: 50px;
@@ -19,7 +19,7 @@
     background-color: $draw-yellow;
   }
 
-  .history-image {
+  .historyImage {
     flex: 1;
     height: 100%;
   }

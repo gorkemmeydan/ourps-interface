@@ -1,6 +1,6 @@
 @import '../../../styles/theme-colors.scss';
 
-.connect-wallet-button {
+.connectWalletButton {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -16,7 +16,7 @@
     border-color: rgb(130, 130, 255);
   }
 
-  .button-text {
+  .buttonText {
     display: inline-block;
     font-weight: bold;
   }

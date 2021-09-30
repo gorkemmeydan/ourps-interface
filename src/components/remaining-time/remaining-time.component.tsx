@@ -2,7 +2,7 @@ import React from 'react';
 
 import useRoundEndTimestamp from '../../hooks/useRoundEndTimestamp';
 
-import './remaining-time.styles.scss';
+import styles from './remaining-time.module.scss';
 
 const RemainingTime: React.FC = () => {
   const time = useRoundEndTimestamp();
@@ -19,7 +19,7 @@ const RemainingTime: React.FC = () => {
     }
   }
 
-  return <div className='remaining-time'>{convertedTime}</div>;
+  return <div className={styles.remainingTime}>{convertedTime}</div>;
 };
 
 export default RemainingTime;

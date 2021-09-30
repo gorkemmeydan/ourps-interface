@@ -7,7 +7,7 @@ import rockUrl from '../../assets/rock-image.png';
 import paperUrl from '../../assets/paper-image.png';
 import scissorUrl from '../../assets/scissor-image.png';
 
-import './round-history.styles.scss';
+import styles from './round-history.module.scss';
 
 interface DummyType {
   team: 'red' | 'blue' | 'draw';
@@ -29,7 +29,7 @@ const RoundHistory: React.FC = () => {
   ];
 
   return (
-    <div className='round-history'>
+    <div className={styles.roundHistory}>
       {dummyHistory.map((history) => {
         if (history.team !== 'draw') {
           if (history.type === 'rock') {

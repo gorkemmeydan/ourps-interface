@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
-import './progress-bar.styles.scss';
+import styles from './progress-bar.module.scss';
 
 const ProgressBar: React.FC = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [percentage, setPercentage] = useState(75);
 
   return (
-    <div className='progress-bar'>
-      <div className='remaining' style={{ width: `${percentage}%` }} />
+    <div className={styles.progressBar}>
+      <div className={styles.remaining} style={{ width: `${percentage}%` }} />
     </div>
   );
 };

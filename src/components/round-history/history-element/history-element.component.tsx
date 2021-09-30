@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './history-element.styles.scss';
+import styles from './history-element.module.scss';
 
 interface Props {
   team: 'red' | 'blue' | 'draw';
@@ -8,10 +8,10 @@ interface Props {
 }
 
 const HistoryElement: React.FC<Props> = ({ team, backgroundUrl }: Props) => (
-  <div className={`${team} history-element`}>
+  <div className={`${styles[team]} ${styles.historyElement}`}>
     {team !== 'draw' ? (
       <img
-        className='history-image'
+        className={styles.historyImage}
         src={backgroundUrl}
         alt='rock-paper-scissors'
       />

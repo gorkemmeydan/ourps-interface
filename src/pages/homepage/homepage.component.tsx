@@ -6,26 +6,35 @@ import RemainingTime from '../../components/remaining-time/remaining-time.compon
 import Ballot from '../../components/ballot/ballot.component';
 import RoundHistory from '../../components/round-history/round-history.component';
 
-import './homepage.styles.scss';
+import useRedTeamVotes from '../../hooks/useRedTeamVotes';
 
-const HomePage: React.FC = () => (
-  <div className='homepage'>
-    <div className='header-container'>
-      <Header />
+import styles from './homepage.module.scss';
+
+const HomePage: React.FC = () => {
+  const redVotes = useRedTeamVotes();
+
+  // eslint-disable-next-line no-console
+  console.log('red vote: ', redVotes);
+
+  return (
+    <div className={styles.homepage}>
+      <div className={styles.headerContainer}>
+        <Header />
+      </div>
+      <RemainingTime />
+      <div className={styles.bar}>
+        <ProgressBar />
+      </div>
+      <div className={styles.ballots}>
+        <Ballot team='red' votes={redVotes} />
+        <Ballot team='blue' votes={redVotes} />
+      </div>
+      <div className={styles.roundHistoryText}>Round History</div>
+      <div className={styles.roundHistoryContainer}>
+        <RoundHistory />
+      </div>
     </div>
-    <RemainingTime />
-    <div className='bar'>
-      <ProgressBar />
-    </div>
-    <div className='ballots'>
-      <Ballot team='red' />
-      <Ballot team='blue' />
-    </div>
-    <div className='round-history-text'>Round History</div>
-    <div className='round-history-container'>
-      <RoundHistory />
-    </div>
-  </div>
-);
+  );
+};
 
 export default HomePage;

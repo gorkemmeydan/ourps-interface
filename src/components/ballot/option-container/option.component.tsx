@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './option.styles.scss';
+import styles from './option.module.scss';
 
 interface Props {
   team: 'red' | 'blue';
@@ -15,16 +15,16 @@ const Option: React.FC<Props> = ({
   voteCount,
   backgroundUrl,
 }: Props) => (
-  <div className={`${team} option`}>
-    <div className='image-container'>
+  <div className={`${styles[team]} ${styles.option}`}>
+    <div className={styles.imageContainer}>
       <img
-        className='rps-image'
+        className={styles.rpsImage}
         src={backgroundUrl}
         alt='rock-paper-scissors'
       />
     </div>
-    <div className='option-percentage'>{percentage}%</div>
-    <div className='vote-count'>({voteCount})</div>
+    <div className={styles.optionPercentage}>{percentage}%</div>
+    <div className={styles.voteCount}>({voteCount})</div>
   </div>
 );
 

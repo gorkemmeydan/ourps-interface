@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: flex-start;
 
-  .header-container {
+  .headerContainer {
     display: inline-block;
   }
 
@@ -27,7 +27,7 @@
     column-gap: 10%;
   }
 
-  .round-history-text {
+  .roundHistoryText {
     padding-top: 3%;
     padding-bottom: 1%;
     color: white;
@@ -35,7 +35,7 @@
     font-size: 2rem;
   }
 
-  .round-history-container {
+  .roundHistoryContainer {
     width: 100%;
     overflow: hidden;
     display: flex;
