@@ -28,7 +28,7 @@ const useTeamVotes = ({ team }: Props): Votes => {
       args: [queryTeam],
     }) ?? [];
 
-  if (votes === undefined) {
+  if (!votes.length) {
     const noConnectionVotes = {
       rock: 0,
       paper: 0,

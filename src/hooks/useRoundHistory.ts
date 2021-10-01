@@ -21,7 +21,7 @@ const useRoundHistory = (): History => {
       args: [],
     }) ?? [];
 
-  if (history === undefined) {
+  if (!history.length) {
     const noConnectionHistory = {
       red: 0,
       blue: 0,
