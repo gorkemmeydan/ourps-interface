@@ -2,25 +2,27 @@
 
 .historyElement {
   display: flex;
-  height: 50px;
-  width: 50px;
+  height: 100%;
   padding: 5px;
-  border-radius: 12px;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
 
-  &.red {
-    background-color: $dark-red;
-  }
+  .writing {
+    padding: 10px;
+    border-radius: 12px;
 
-  &.blue {
-    background-color: $dark-blue;
-  }
+    &.red {
+      background-color: $dark-red;
+    }
 
-  &.draw {
-    background-color: $draw-yellow;
-  }
+    &.blue {
+      background-color: $dark-blue;
+    }
 
-  .historyImage {
-    flex: 1;
-    height: 100%;
+    &.draw {
+      background-color: $draw-yellow;
+    }
   }
 }

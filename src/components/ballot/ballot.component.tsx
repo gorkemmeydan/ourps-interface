@@ -10,7 +10,7 @@ import styles from './ballot.module.scss';
 
 interface Props {
   team: 'red' | 'blue';
-  votes: number[] | undefined;
+  votes: string[] | undefined;
 }
 
 const Ballot: React.FC<Props> = ({ team, votes }: Props) => (
@@ -20,19 +20,19 @@ const Ballot: React.FC<Props> = ({ team, votes }: Props) => (
       <Option
         team={team}
         percentage={33}
-        voteCount={votes ? votes[0] : 0}
+        voteCount={votes ? votes[0] : '0'}
         backgroundUrl={`../${RockImage}`}
       />
       <Option
         team={team}
         percentage={33}
-        voteCount={votes ? votes[1] : 0}
+        voteCount={votes ? votes[1] : '0'}
         backgroundUrl={`../${PaperImage}`}
       />
       <Option
         team={team}
         percentage={33}
-        voteCount={votes ? votes[2] : 0}
+        voteCount={votes ? votes[2] : '0'}
         backgroundUrl={`../${ScissorImage}`}
       />
     </div>

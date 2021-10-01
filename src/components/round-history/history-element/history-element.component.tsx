@@ -4,23 +4,15 @@ import styles from './history-element.module.scss';
 
 interface Props {
   team: 'red' | 'blue' | 'draw';
-  backgroundUrl?: string;
+  winCount: number | undefined;
 }
 
-const HistoryElement: React.FC<Props> = ({ team, backgroundUrl }: Props) => (
-  <div className={`${styles[team]} ${styles.historyElement}`}>
-    {team !== 'draw' ? (
-      <img
-        className={styles.historyImage}
-        src={backgroundUrl}
-        alt='rock-paper-scissors'
-      />
-    ) : null}
+const HistoryElement: React.FC<Props> = ({ team, winCount }: Props) => (
+  <div className={styles.historyElement}>
+    <div className={`${styles[team]} ${styles.writing}`}>
+      {team.toUpperCase()} : {winCount || '0'}
+    </div>
   </div>
 );
-
-HistoryElement.defaultProps = {
-  backgroundUrl: '',
-};
 
 export default HistoryElement;
