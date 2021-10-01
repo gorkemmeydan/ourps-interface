@@ -5,7 +5,7 @@ import styles from './option.module.scss';
 interface Props {
   team: 'red' | 'blue';
   percentage: number;
-  voteCount: string;
+  voteCount: number;
   backgroundUrl: string;
 }
 

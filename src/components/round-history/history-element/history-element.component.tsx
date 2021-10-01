@@ -4,13 +4,13 @@ import styles from './history-element.module.scss';
 
 interface Props {
   team: 'red' | 'blue' | 'draw';
-  winCount: number | undefined;
+  winCount: number;
 }
 
 const HistoryElement: React.FC<Props> = ({ team, winCount }: Props) => (
   <div className={styles.historyElement}>
     <div className={`${styles[team]} ${styles.writing}`}>
-      {team.toUpperCase()} : {winCount || '0'}
+      {team.toUpperCase()} : {winCount}
     </div>
   </div>
 );

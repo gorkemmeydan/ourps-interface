@@ -9,20 +9,10 @@ import RoundHistory from '../../components/round-history/round-history.component
 import useTeamVotes from '../../hooks/useTeamVotes';
 
 import styles from './homepage.module.scss';
-import useRoundHistory from '../../hooks/useRoundHistory';
 
 const HomePage: React.FC = () => {
   const redVotes = useTeamVotes({ team: 'red' });
   const blueVotes = useTeamVotes({ team: 'blue' });
-
-  const roundHistory = useRoundHistory();
-
-  // eslint-disable-next-line no-console
-  console.log('red vote: ', redVotes);
-  // eslint-disable-next-line no-console
-  console.log('blue vote: ', blueVotes);
-  // eslint-disable-next-line no-console
-  console.log('xxx vote: ', roundHistory);
 
   return (
     <div className={styles.homepage}>

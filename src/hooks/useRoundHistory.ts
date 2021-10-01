@@ -9,7 +9,7 @@ interface History {
   draw: number;
 }
 
-const useRoundHistory = (): History | undefined => {
+const useRoundHistory = (): History => {
   const ourpsInterface = new utils.Interface(OURPS_ABI);
   const contractAdress = OURPS_ADRESS;
 
@@ -21,7 +21,15 @@ const useRoundHistory = (): History | undefined => {
       args: [],
     }) ?? [];
 
-  if (history === undefined) return undefined;
+  if (history === undefined) {
+    const noConnectionHistory = {
+      red: 0,
+      blue: 0,
+      draw: 0,
+    };
+
+    return noConnectionHistory;
+  }
 
   const historyArr = history.toString().split(',');
 

@@ -10,9 +10,9 @@ const RoundHistory: React.FC = () => {
 
   return (
     <div className={styles.roundHistory}>
-      <HistoryElement team='red' winCount={roundHistory?.red} />
-      <HistoryElement team='blue' winCount={roundHistory?.blue} />
-      <HistoryElement team='draw' winCount={roundHistory?.draw} />
+      <HistoryElement team='red' winCount={roundHistory.red} />
+      <HistoryElement team='blue' winCount={roundHistory.blue} />
+      <HistoryElement team='draw' winCount={roundHistory.draw} />
     </div>
   );
 };
