@@ -23,9 +23,9 @@ const calcVotePercentage = ({ rock, paper, scissors }: Props): Percentages => {
   }
 
   const votePercentages = {
-    rock: parseInt((rock / total).toFixed(2), 10),
-    paper: parseInt((paper / total).toFixed(2), 10),
-    scissors: parseInt((scissors / total).toFixed(2), 10),
+    rock: parseInt(((rock / total) * 100).toFixed(2), 10),
+    paper: parseInt(((paper / total) * 100).toFixed(2), 10),
+    scissors: parseInt(((scissors / total) * 100).toFixed(2), 10),
   };
 
   return votePercentages;

@@ -41,8 +41,8 @@ const useTeamVotes = ({ team }: Props): Votes => {
 
   const connectedVotes = {
     rock: parseInt(voteArr[0], 10),
-    paper: parseInt(voteArr[0], 10),
-    scissors: parseInt(voteArr[0], 10),
+    paper: parseInt(voteArr[1], 10),
+    scissors: parseInt(voteArr[2], 10),
   };
 
   return connectedVotes;
