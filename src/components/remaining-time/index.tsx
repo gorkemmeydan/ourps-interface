@@ -45,7 +45,7 @@ const RemainingTime: React.FC<Props> = ({
   useEffect(() => {
     const onRoundEnd = () => {
       // eslint-disable-next-line
-      alert('Round has been ended');
+      getEndTime();
     };
 
     if (contract) {

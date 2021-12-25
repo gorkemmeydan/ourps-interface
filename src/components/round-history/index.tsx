@@ -23,6 +23,24 @@ const RoundHistory: React.FC<Props> = ({ contract }: Props) => {
     getHistory();
   }, []);
 
+  useEffect(() => {
+    const onRoundEnd = () => {
+      // eslint-disable-next-line
+      getHistory();
+    };
+
+    if (contract) {
+      contract.on('RoundEnded', onRoundEnd);
+    }
+
+    return () => {
+      // when component unmount, get rid of event listener
+      if (contract) {
+        contract.off('RoundEnded', onRoundEnd);
+      }
+    };
+  }, [contract]);
+
   return (
     <div className={styles.roundHistory}>
       <HistoryElement team='red' winCount={history[0]} />
