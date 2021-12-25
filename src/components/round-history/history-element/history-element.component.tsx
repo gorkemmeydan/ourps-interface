@@ -4,7 +4,7 @@ import styles from './history-element.module.scss';
 
 interface Props {
   team: 'red' | 'blue' | 'draw';
-  winCount: number;
+  winCount: string;
 }
 
 const HistoryElement: React.FC<Props> = ({ team, winCount }: Props) => (

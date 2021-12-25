@@ -1,11 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 
 import Jazzicon from '@metamask/jazzicon';
-import { useEthers } from '@usedapp/core';
+// import { useEthers } from '@usedapp/core';
 
 const Identicon: React.FC = () => {
   const ref = useRef<HTMLDivElement>();
-  const { account } = useEthers();
+  // const { account } = useEthers();
+  const account = '0x771EB828646f62eFb75b190aA3C2037CbF3546CA';
+
 
   useEffect(() => {
     if (account && ref.current) {

@@ -8,19 +8,25 @@
   flex-direction: column;
   justify-content: flex-start;
 
+  .notConnected {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .errorMsg {
+    color: $light-red;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
   .headerContainer {
     display: inline-block;
   }
 
-  .bar {
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-  }
-
   .ballots {
-    margin-top: 5%;
     width: 100%;
     display: flex;
     justify-content: center;

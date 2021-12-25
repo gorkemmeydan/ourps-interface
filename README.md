@@ -2,6 +2,8 @@
 
 Interface for the Web3 collective rock paper scissors game based on a smart contract.
 
+Build with Typescript, Ethers.js, React.js and Sass.
+
 Blockchain backend can be seen in [here](https://github.com/yagizsenal/ourps)
 
 ## Available Scripts
